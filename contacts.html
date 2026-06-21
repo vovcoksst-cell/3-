@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contacts-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #667eea;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .contact-value {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .contact-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #667eea;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-link:hover {
+            background-color: #764ba2;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn {
+            background-color: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #764ba2;
+        }
+
+        @media (max-width: 768px) {
+            .contacts-container {
+                grid-template-columns: 1fr;
+            }
+
+            .social-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TechStore</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#categories">Категорії</a></li>
+                    <li><a href="index.html#products">Товари</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><i class="fas fa-phone"></i> Контакти</h1>
+        <p>Зв'яжіться з нами будь-яким зручним способом</p>
+    </section>
+
+    <div class="container">
+        <div class="contacts-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Наші контакти</h2>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-building"></i> Найменування</div>
+                    <div class="contact-value">ТОВ "TechStore"</div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-map-marker-alt"></i> Адреса</div>
+                    <div class="contact-value">
+                        м. Київ, вул. Технологічна, 123<br>
+                        Офіс на 5-му поверсі
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-phone"></i> Телефон</div>
+                    <div class="contact-value">
+                        <a href="tel:+380000000000">+38 (000) 000-00-00</a><br>
+                        <small>(Пн-Пт: 9:00-18:00)</small>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-envelope"></i> Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:info@techstore.ua">info@techstore.ua</a><br>
+                        <a href="mailto:support@techstore.ua">support@techstore.ua</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-clock"></i> Режим роботи</div>
+                    <div class="contact-value">
+                        Пн-Пт: 09:00 - 18:00<br>
+                        Сб: 10:00 - 16:00<br>
+                        Нд: Вихідний
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-label"><i class="fas fa-share-alt"></i> Слідкуйте за нами</div>
+                    <div class="social-links-grid">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Форма зворотного зв'язку</h2>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Номер телефону</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+38 (0XX) XXX-XX-XX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема повідомлення *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Виберіть тему --</option>
+                            <option value="order">Запитання про замовлення</option>
+                            <option value="product">Запитання про товар</option>
+                            <option value="delivery">Запитання про доставку</option>
+                            <option value="return">Запитання про повернення</option>
+                            <option value="complaint">Скарга</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Ваше повідомлення *</label>
+                        <textarea id="message" name="message" required placeholder="Опишіть вашу проблему або питання..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Про TechStore</h3>
+                <p>TechStore - ваш надійний партнер у виборі найкращої комп'ютерної техніки та електроніки</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="#">Доставка й повернення</a></li>
+                    <li><a href="#">Умови гарантії</a></li>
+                    <li><a href="#">Користувацька угода</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Служба підтримки</h3>
+                <ul>
+                    <li><a href="tel:+380000000000">☎️ +38 (000) 000-00-00</a></li>
+                    <li><a href="mailto:info@techstore.ua">📧 info@techstore.ua</a></li>
+                    <li><a href="contacts.html">Форма зворотного зв'язку</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Категорії</h3>
+                <ul>
+                    <li><a href="laptops.html">Ноутбуки</a></li>
+                    <li><a href="smartphones.html">Смартфони</a></li>
+                    <li><a href="monitors.html">Монітори</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechStore. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Спасибо! Ваше повідомлення отримано. Ми зв\'яжемся з вами найближчим часом.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>

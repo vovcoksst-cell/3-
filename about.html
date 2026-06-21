@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-content {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .value-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .value-description {
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TechStore</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#categories">Категорії</a></li>
+                    <li><a href="index.html#products">Товари</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><i class="fas fa-info-circle"></i> Про TechStore</h1>
+        <p>Ми - лідер в онлайн торгівлі сучасною технікою</p>
+    </section>
+
+    <div class="container">
+        <section class="about-content">
+            <h2><i class="fas fa-book"></i> Наша історія</h2>
+            <p>
+                TechStore було засновано у 2015 році з простою метою - зробити високотехнологічні пристрої 
+                доступними для кожного. Ми почали як невеликий магазин, але завдяки високій якості обслуговування 
+                та бажанню завжди залишатися лідером на ринку, ми виросли в один з найбільших онлайн-магазинів техніки 
+                в Україні.
+            </p>
+            <p>
+                За понад 9 років роботи ми обслужили більше 500 000 задоволених клієнтів, продали мільйони одиниць техніки 
+                і заслужили репутацію надійного партнера.
+            </p>
+
+            <h2><i class="fas fa-bullseye"></i> Наша місія</h2>
+            <p>
+                Наша місія - надати найкращий вибір електроніки та комп'ютерної техніки за найконкурентнішими цінами 
+                з максимальним сервісом та підтримкою клієнтів.
+            </p>
+
+            <h2><i class="fas fa-star"></i> Наші цінності</h2>
+            <div class="values">
+                <div class="value-card">
+                    <div class="value-icon">✓</div>
+                    <div class="value-title">Якість</div>
+                    <div class="value-description">Ми гарантуємо якість кожного товару та його офіційну гарантію</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <div class="value-title">Надійність</div>
+                    <div class="value-description">Надійна доставка, прозорі ціни, честна інформація про товари</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <div class="value-title">Інновація</div>
+                    <div class="value-description">Ми завжди слідкуємо за найновішими технологіями та трендами</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👥</div>
+                    <div class="value-title">Обслуговування</div>
+                    <div class="value-description">24/7 підтримка клієнтів та консультація експертів</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <div class="value-title">Розвиток</div>
+                    <div class="value-description">Постійний розвиток та розширення асортименту</div>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <div class="value-title">Доступність</div>
+                    <div class="value-description">Доставка по всій Україні, легкі повернення</div>
+                </div>
+            </div>
+
+            <h2><i class="fas fa-trophy"></i> Наші досягнення</h2>
+            <p>
+                ✓ Більше ніж 500 000 задоволених клієнтів<br>
+                ✓ Рейтинг 4.9/5 на всіх платформах<br>
+                ✓ Партнер провідних виробників техніки<br>
+                ✓ Найшвидша доставка - 1-3 дні по України<br>
+                ✓ Найбільший асортимент на ринку<br>
+                ✓ Найкращі ціни та регулярні акції
+            </p>
+
+            <h2>📞 Зв'яжіться з нами</h2>
+            <p>
+                Маєте питання або потрібна консультація? Ми завжди готові допомогти!<br><br>
+                Телефон: <a href="tel:+380000000000">+38 (000) 000-00-00</a><br>
+                Email: <a href="mailto:info@techstore.ua">info@techstore.ua</a><br>
+                Адреса: м. Київ, вул. Технологічна, 123<br><br>
+                <a href="contacts.html" class="btn">Форма зворотного зв'язку</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Про TechStore</h3>
+                <p>TechStore - ваш надійний партнер у виборі найкращої комп'ютерної техніки та електроніки</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="#">Доставка й повернення</a></li>
+                    <li><a href="#">Умови гарантії</a></li>
+                    <li><a href="#">Користувацька угода</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Служба підтримки</h3>
+                <ul>
+                    <li><a href="tel:+380000000000">☎️ +38 (000) 000-00-00</a></li>
+                    <li><a href="mailto:info@techstore.ua">📧 info@techstore.ua</a></li>
+                    <li><a href="contacts.html">Форма зворотного зв'язку</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Категорії</h3>
+                <ul>
+                    <li><a href="laptops.html">Ноутбуки</a></li>
+                    <li><a href="smartphones.html">Смартфони</a></li>
+                    <li><a href="monitors.html">Монітори</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechStore. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

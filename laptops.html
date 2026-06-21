@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ноутбуки - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TechStore</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#categories">Категорії</a></li>
+                    <li><a href="index.html#products">Товари</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><i class="fas fa-laptop"></i> Ноутбуки</h1>
+        <p>Потужні та портативні ноутбуки для роботи, навчання та розваг</p>
+    </section>
+
+    <div class="container">
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <h2>Фільтр ноутбуків</h2>
+            <div class="filter-group">
+                <label>Виробник:</label>
+                <select>
+                    <option>Всі виробники</option>
+                    <option>ASUS</option>
+                    <option>Dell</option>
+                    <option>HP</option>
+                    <option>Lenovo</option>
+                    <option>Apple</option>
+                </select>
+
+                <label>Екран:</label>
+                <select>
+                    <option>Всі розміри</option>
+                    <option>13"</option>
+                    <option>14"</option>
+                    <option>15"</option>
+                    <option>17"</option>
+                </select>
+
+                <label>Ціна:</label>
+                <select>
+                    <option>Всі цени</option>
+                    <option>До 10000 грн</option>
+                    <option>10000 - 20000 грн</option>
+                    <option>20000 - 40000 грн</option>
+                    <option>Понад 40000 грн</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <h2 class="section-title">Популярні ноутбуки</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">ASUS VivoBook 15</div>
+                        <div class="product-description">Екран 15.6" FHD, AMD Ryzen 5, 8GB RAM, SSD 512GB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Вільгокоста клавіатура<br>
+                            ✓ Батарея до 10 годин<br>
+                            ✓ Вес 1.8 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">12 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">Dell XPS 13</div>
+                        <div class="product-description">UltraBook 13.4" OLED, Intel Core i7, 16GB RAM, SSD 512GB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ OLED дисплей 3.5K<br>
+                            ✓ Компактний дизайн<br>
+                            ✓ Вес 1.2 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">28 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">HP Pavilion 15</div>
+                        <div class="product-description">Екран 15.6" IPS, Intel Core i5, 8GB RAM, SSD 256GB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Хорошу графіку<br>
+                            ✓ Достатня продуктивність<br>
+                            ✓ Вес 1.9 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">10 499 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">Lenovo ThinkPad E15</div>
+                        <div class="product-description">Екран 15.6" IPS, Intel Core i7, 16GB RAM, SSD 512GB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Надійна будова<br>
+                            ✓ Для бізнесу<br>
+                            ✓ Вес 1.85 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">18 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">MacBook Pro 14"</div>
+                        <div class="product-description">Екран 14.2" MiniLED, Apple M3 Max, 18GB RAM, SSD 512GB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Найновіший чіп M3<br>
+                            ✓ Премiум якість<br>
+                            ✓ Вес 1.6 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">49 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <div class="product-name">ASUS ROG Zephyrus G14</div>
+                        <div class="product-description">Екран 14" 120Hz, Intel Core i9, RTX 4090, 32GB RAM, SSD 1TB</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Для ігри і роботи<br>
+                            ✓ Потужна графіка<br>
+                            ✓ Вес 1.9 кг
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">55 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Про категорію</h3>
+                <p>Широкий вибір ноутбуків від провідних виробників. Для роботи, навчання та розваг.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="#">Доставка й повернення</a></li>
+                    <li><a href="#">Умови гарантії</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Служба підтримки</h3>
+                <ul>
+                    <li><a href="tel:+380000000000">☎️ +38 (000) 000-00-00</a></li>
+                    <li><a href="mailto:info@techstore.ua">📧 info@techstore.ua</a></li>
+                    <li><a href="contacts.html">Форма зворотного зв'язку</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Категорії</h3>
+                <ul>
+                    <li><a href="laptops.html">Ноутбуки</a></li>
+                    <li><a href="smartphones.html">Смартфони</a></li>
+                    <li><a href="monitors.html">Монітори</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechStore. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

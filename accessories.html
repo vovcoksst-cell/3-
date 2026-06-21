@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аксесуари та ПЗ - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TechStore</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#categories">Категорії</a></li>
+                    <li><a href="index.html#products">Товари</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1><i class="fas fa-headphones"></i> Аксесуари</h1>
+        <p>Клавіатури, мишки, навушники та інші аксесуари для вашої мовилки</p>
+    </section>
+
+    <div class="container">
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <h2>Фільтр аксесуарів</h2>
+            <div class="filter-group">
+                <label>Тип:</label>
+                <select>
+                    <option>Всі типи</option>
+                    <option>Клавіатури</option>
+                    <option>Мишки</option>
+                    <option>Навушники</option>
+                    <option>Зарядні</option>
+                    <option>Кабелі</option>
+                </select>
+
+                <label>Бренд:</label>
+                <select>
+                    <option>Всі бренди</option>
+                    <option>Corsair</option>
+                    <option>Logitech</option>
+                    <option>Sony</option>
+                    <option>Apple</option>
+                </select>
+
+                <label>Ціна:</label>
+                <select>
+                    <option>Всі цены</option>
+                    <option>До 1000 грн</option>
+                    <option>1000 - 3000 грн</option>
+                    <option>3000 - 8000 грн</option>
+                    <option>Понад 8000 грн</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section">
+            <h2 class="section-title">Популярні аксесуари</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">⌨️</div>
+                    <div class="product-info">
+                        <div class="product-name">Corsair K95 Platinum</div>
+                        <div class="product-description">Механічна клавіатура, RGB, Cherry MX</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Cherry MX механіка<br>
+                            ✓ RGB підсвітка<br>
+                            ✓ Програмування
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">6 299 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">🖱️</div>
+                    <div class="product-info">
+                        <div class="product-name">Logitech MX Master 3S</div>
+                        <div class="product-description">Безпровідна мишка, Precision Scroll</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Ergonomic</br>
+                            ✓ Multi-device<br>
+                            ✓ Charge Fast
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">4 799 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">🎧</div>
+                    <div class="product-info">
+                        <div class="product-name">Sony WH-1000XM5</div>
+                        <div class="product-description">Бездротові навушники, ANC, 30h батарея</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ Active Noise Cancel<br>
+                            ✓ 30 годин батарії<br>
+                            ✓ Hi-Res Audio
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">9 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">⌚</div>
+                    <div class="product-info">
+                        <div class="product-name">Apple Watch Series 9</div>
+                        <div class="product-description">45mm, OLED дисплей, фітнес трекер</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ OLED завжди вкл<br>
+                            ✓ Стан здоров'я<br>
+                            ✓ До 18 годин
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">14 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">📷</div>
+                    <div class="product-info">
+                        <div class="product-name">Canon EOS R6</div>
+                        <div class="product-description">Дзеркальна камера, 20MP, 4K відео</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ RF байонет<br>
+                            ✓ 4K 60fps<br>
+                            ✓ Погодоусічна камера
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">39 999 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">🔌</div>
+                    <div class="product-info">
+                        <div class="product-name">Anker 747 Charger</div>
+                        <div class="product-description">GaN зарядка 150W, 3 USB-C порту</div>
+                        <div style="color: #666; font-size: 0.9rem; margin: 10px 0;">
+                            ✓ 150W потужність<br>
+                            ✓ Компактна<br>
+                            ✓ Все в одному
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">2 799 грн</span>
+                            <button class="add-to-cart-btn">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Про категорію</h3>
+                <p>Все для вашої техніки - аксесуари, периферія, ЗУ та багато іншого.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Інформація</h3>
+                <ul>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="#">Доставка й повернення</a></li>
+                    <li><a href="#">Умови гарантії</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Служба підтримки</h3>
+                <ul>
+                    <li><a href="tel:+380000000000">☎️ +38 (000) 000-00-00</a></li>
+                    <li><a href="mailto:info@techstore.ua">📧 info@techstore.ua</a></li>
+                    <li><a href="contacts.html">Форма зворотного зв'язку</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Категорії</h3>
+                <ul>
+                    <li><a href="laptops.html">Ноутбуки</a></li>
+                    <li><a href="smartphones.html">Смартфони</a></li>
+                    <li><a href="monitors.html">Монітори</a></li>
+                    <li><a href="accessories.html">Аксесуари</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechStore. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
